@@ -4,7 +4,7 @@ const day = document.querySelector('.day')
 const time = document.querySelector('.time')
 const year = document.querySelector('.year')
 
-setInterval(() => day.textContent = dayName(), 100)
+setInterval(() => day.textContent = dayName(), 1)
 
 function dayName() {
     let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut']
@@ -12,6 +12,6 @@ function dayName() {
     return days[new Date().getDay()]
 }
 
-setInterval(() => time.textContent = `${new Date().getHours()} : ${new Date().getMinutes()} : ${new Date().getSeconds()}`, 100)
+setInterval(() => time.textContent = `${new Date().getHours()} : ${new Date().getMinutes()} : ${new Date().getSeconds()}`, 1)
 
-setInterval(() => year.textContent = new Date().getFullYear(), 1000);
+setInterval(() => year.textContent = new Date().getFullYear(), 1);
