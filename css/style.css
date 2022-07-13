@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Varela+Round&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -9,17 +9,37 @@ body {
     font-family: 'Quicksand';
     font-weight: 400;
     font-size: 30px;
-    background: linear-gradient(90deg, rgb(50, 226, 215), rgb(7, 251, 103));
+    background: linear-gradient(90deg, rgb(50, 27, 185), rgb(207, 28, 171));
 }
 .wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     padding: 0 15px;
     box-sizing: content-box;
 }
-.wrapper > *:not(:last-child) {
+.title {
+    text-align: center;
+    font-family: 'Varela Round';
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin: -50px 0 20px 0;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 3px 3px 5px rgba(75, 75, 75, 0.1);
+}
+.main-block {
+    display: flex;
+    flex-direction: column;
+}
+.date-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.date-block > *:not(:last-child) {
     margin-right: 15px;
 }
 .bg {
@@ -35,5 +55,36 @@ body {
 .time {
     display: flex;
     justify-content: center;
-    min-width: 130px;
+    min-width: 140px;
+}
+.author-block {
+    align-self: flex-end;
+}
+.icon-block {
+    display: flex;
+    fill: rgba(0, 0, 0, .6)
+}
+.icon-block:hover {
+    fill: #fff;
+}
+@media (max-width: 425px) {
+    .title {
+        max-width: 220px;
+    }
+    .date-block {
+        flex-direction: column;
+    }
+    .date-block > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .day {
+        align-self: flex-start;
+    }
+    .time {
+        align-self: center;
+    }
+    .year {
+        align-self: flex-end;
+    }
 }
