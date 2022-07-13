@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgb(50, 226, 215), rgb(7, 251, 103));
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.wrapper > *:not(:last-child) {
+    margin-right: 15px;
+}
+.bg {
+    background: rgba(0, 0, 0, .15);
+    color: rgba(255, 255, 255, .9);
+    padding: 15px;
+    border-radius: 5px;
+}
+.day {
+}
+.time {
+}
